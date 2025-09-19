@@ -289,10 +289,10 @@ The app listens for incoming SMS (SMS_RECEIVED), verifies the token, and execute
 
 
 # License & Contact
-- Suggested license: MIT for early-stage project (choose as per business needs)
+- MIT License — you may use and modify the code for your organization. Include attribution if you redistribute.
 - For commercial / closed-source product consider proprietary license.
 
-**Contact**: Project owner / maintainer - (add your email or handle here)
+**Contact**: Project owner / maintainer - wasim@demoody.com
 
 ---
 ## Author
