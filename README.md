@@ -1,6 +1,6 @@
-# Find My Device — by Demoody
+# Find My Device - by Demoody
 
-**Version:** 0.1 — Draft (MVP)
+**Version:** 0.1 - Draft (MVP)
 
 ---
 
@@ -16,8 +16,8 @@
 9. [Project Structure (recommended)](#project-structure-recommended)
 10. [API Specification (MVP)](#api-specification-mvp)
 11. [Database Schema (MVP)](#database-schema-mvp)
-12. [Android App — Setup & Implementation Notes](#android-app---setup--implementation-notes)
-13. [Web Dashboard — Setup & Notes](#web-dashboard---setup--notes)
+12. [Android App - Setup & Implementation Notes](#android-app---setup--implementation-notes)
+13. [Web Dashboard - Setup & Notes](#web-dashboard---setup--notes)
 14. [SMS Command Handling](#sms-command-handling)
 15. [Testing Strategy](#testing-strategy)
 16. [CI / CD](#ci--cd)
@@ -85,7 +85,7 @@ This app will request sensitive permissions (location, background location, READ
 - **Privacy policy**: publish a public privacy policy and link it in Play Store listing and in the app.
 - **Background location**: clearly explain usage; follow Play Store policy and provide in-app education screens before requesting `ACCESS_BACKGROUND_LOCATION`.
 - **Device admin**: ask user to grant Device Administrator privileges for lock/wipe features. Provide clear in-app flow about how to remove it.
-- **Play Store restrictions**: you cannot block shutdown on non-root devices — avoid claiming you can fully prevent power-off in Store copy. For root-only features, declare that explicitly and gate the feature.
+- **Play Store restrictions**: you cannot block shutdown on non-root devices - avoid claiming you can fully prevent power-off in Store copy. For root-only features, declare that explicitly and gate the feature.
 - **Data handling**: use HTTPS (TLS 1.2+), encrypt sensitive fields at rest if possible, and rotate keys.
 - **Abuse prevention**: implement server-side checks to prevent unauthorized remote commands (2FA, session expiry, device tokens), rate limiting and logging.
 
@@ -169,7 +169,7 @@ All calls over HTTPS. Use JWT or device tokens for device authentication.
 - id, device_id, event_type, message, event_at
 
 
-# Android App — Setup & Implementation Notes
+# Android App - Setup & Implementation Notes
 
 ## 1. Project Setup
 - Language: Java
@@ -189,8 +189,8 @@ All calls over HTTPS. Use JWT or device tokens for device authentication.
 - `ACCESS_BACKGROUND_LOCATION` (explain to user before requesting)
 - `FOREGROUND_SERVICE` (for persistent tracking)
 - `RECEIVE_BOOT_COMPLETED` (start service after boot)
-- `READ_PHONE_STATE` (for IMEI/sim info) — note: IMEI access is restricted on newer APIs; prefer `Settings.Secure.ANDROID_ID` and TelephonyManager methods where permitted.
-- `USE_FULL_SCREEN_INTENT` or SYSTEM_ALERT_WINDOW` (avoid SYSTEM_ALERT_WINDOW unless absolutely necessary — it can trigger Play Store restrictions)
+- `READ_PHONE_STATE` (for IMEI/sim info) - note: IMEI access is restricted on newer APIs; prefer `Settings.Secure.ANDROID_ID` and TelephonyManager methods where permitted.
+- `USE_FULL_SCREEN_INTENT` or SYSTEM_ALERT_WINDOW` (avoid SYSTEM_ALERT_WINDOW unless absolutely necessary - it can trigger Play Store restrictions)
 
 **Important**: Always request runtime permissions with an explanatory screen.
 
@@ -224,7 +224,7 @@ All calls over HTTPS. Use JWT or device tokens for device authentication.
 - Store tokens in `EncryptedSharedPreferences` (AndroidX Security) or Android KeyStore.
 
 
-# Web Dashboard — Setup & Notes
+# Web Dashboard - Setup & Notes
 - MVP: simple Bootstrap + jQuery interface to list devices and show a map.
 - Actions: view last location, request immediate location, ring device, lock device, show message, wipe device.
 - Authentication: session + 2FA option.
@@ -233,7 +233,7 @@ All calls over HTTPS. Use JWT or device tokens for device authentication.
 
 
 # SMS Command Handling
-- Allow a secure SMS command interface as a backup (e.g., send SMS with a one-time code). Be careful — SMS commands are easily spoofed. Protect with:
+- Allow a secure SMS command interface as a backup (e.g., send SMS with a one-time code). Be careful - SMS commands are easily spoofed. Protect with:
   - Pre-shared secret token in the SMS body.
   - Check incoming message sender number (whitelist) if possible.
   - Rate-limit SMS triggers.
@@ -292,7 +292,7 @@ The app listens for incoming SMS (SMS_RECEIVED), verifies the token, and execute
 - Suggested license: MIT for early-stage project (choose as per business needs)
 - For commercial / closed-source product consider proprietary license.
 
-**Contact**: Project owner / maintainer — (add your email or handle here)
+**Contact**: Project owner / maintainer - (add your email or handle here)
 
 ---
 ## Author
