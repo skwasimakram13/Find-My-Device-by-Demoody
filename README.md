@@ -1,4 +1,4 @@
-# FindMyDevice — README
+# Find My Device — by Demoody
 
 **Version:** 0.1 — Draft (MVP)
 
@@ -28,7 +28,7 @@
 ---
 
 # Project Overview
-**FindMyDevice** is a cross-device anti-theft & tracking solution for Android devices. The product bundles:
+**Find  MyDevice** by **Demoody** is a cross-device anti-theft & tracking solution for Android devices. The product bundles:
 
 - A **mobile app** (Android, Java) that runs in foreground/foreground-service and periodically uploads device location to a secure backend.
 - A **backend (PHP + MySQL)** that stores device metadata, location history and executes remote commands.
