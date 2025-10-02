@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find My Device"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checking status..."
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:background="@color/light_gray"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/enableTrackingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Tracking"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/enableDeviceAdminBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enable Device Admin"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/testLocationBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test Location"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/settingsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Device Information"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/deviceInfoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading device info..."
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:background="@color/light_gray"
+                android:padding="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

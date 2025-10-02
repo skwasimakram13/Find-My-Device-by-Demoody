@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Find My Device</string>
+    <string name="notification_channel_name">Location Tracking</string>
+    <string name="notification_channel_description">Tracks device location for anti-theft protection</string>
+    <string name="location_tracking_notification_title">Find My Device Active</string>
+    <string name="location_tracking_notification_text">Your device location is being tracked for security</string>
+    
+    <!-- Device Admin -->
+    <string name="device_admin_label">Find My Device Admin</string>
+    <string name="device_admin_description">Allows remote lock and wipe functionality for anti-theft protection</string>
+    
+    <!-- Permissions -->
+    <string name="location_permission_rationale">Location access is required to track your device for anti-theft protection</string>
+    <string name="background_location_permission_rationale">Background location access allows the app to track your device even when the app is not actively being used</string>
+    <string name="phone_state_permission_rationale">Phone state access is needed to detect SIM card changes for security alerts</string>
+    
+    <!-- SMS Commands -->
+    <string name="sms_command_prefix">FINDMY</string>
+    
+    <!-- Fake Shutdown -->
+    <string name="fake_shutdown_password_prompt">Enter password to continue shutdown:</string>
+    <string name="fake_shutdown_wrong_password">Incorrect password</string>
+</resources>

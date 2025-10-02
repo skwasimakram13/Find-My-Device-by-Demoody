@@ -1,0 +1,82 @@
+# Android
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android Studio
+android-app/.idea/
+android-app/app/build/
+android-app/build/
+android-app/.gradle/
+android-app/gradle/wrapper/gradle-wrapper.jar
+
+# Firebase (keep the template, ignore real keys)
+# android-app/app/google-services.json
+
+# Backend
+backend/vendor/
+backend/composer.lock
+backend/.env
+backend/config/local_config.php
+
+# Logs
+*.log
+logs/
+backend/logs/
+
+# Database
+*.sql
+*.db
+*.sqlite
+
+# IDE
+.vscode/settings.json
+.vscode/launch.json
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node modules (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+.docker/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Security sensitive files
+*.key
+*.pem
+*.p12
+*.keystore
+secrets/
+
+# Rate limiting files
+/tmp/rate_limit_*
