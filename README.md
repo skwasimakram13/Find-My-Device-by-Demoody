@@ -314,7 +314,7 @@ The app listens for incoming SMS (SMS_RECEIVED), verifies the token, and execute
 
 ---
 
-*This README is a product-level blueprint. It contains technical and legal notes and must be kept up-to-date as code and external policies evolve.*
+*This README is a product-level blueprint. It contains technical and legal notes and external policies evolve.*
 
 
 <!-- End of README -->
