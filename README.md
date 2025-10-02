@@ -1,6 +1,6 @@
 # Find My Device - by Demoody
 
-**Version:** 0.1 - Draft (MVP)
+**Version:** 0.1 - (Draft)
 
 ---
 
