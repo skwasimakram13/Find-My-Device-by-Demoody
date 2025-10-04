@@ -24,6 +24,7 @@
 17. [Roadmap & Milestones](#roadmap--milestones)
 18. [Contribution Guide](#contribution-guide)
 19. [License & Contact](#license--contact)
+20. [Author](#author)
 
 ---
 
