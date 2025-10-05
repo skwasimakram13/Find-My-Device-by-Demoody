@@ -27,6 +27,8 @@
 20. [Author](#author)
 
 ---
+[![Help Gaza](http://skwasimakram.com/upload/help-gaza.svg)](https://www.muslimglobalrelief.org/gaza-emergency-appeal/)
+---
 
 # Project Overview
 **Find  MyDevice** by **Demoody** is a cross-device anti-theft & tracking solution for Android devices. The product bundles:
